@@ -18,7 +18,9 @@ public class MapObject {
     TextColor.RGB foregroundColor;
     TextColor.RGB backgroundColor;
     
-    Random _rand;
+    boolean walkthrough = true;
+    
+    protected Random _rand;
     
     public MapObject() {
         _rand = new Random();
@@ -52,6 +54,14 @@ public class MapObject {
 
     public void setBackgroundColor(TextColor.RGB backgroundColor) {
         this.backgroundColor = backgroundColor;
+    }
+
+    public boolean isWalkthrough() {
+        return walkthrough;
+    }
+
+    public void setWalkthrough(boolean walkthrough) {
+        this.walkthrough = walkthrough;
     }
     
     

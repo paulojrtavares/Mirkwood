@@ -26,7 +26,7 @@ public class PanelMap extends Panel {
 				new TextColor.RGB(170, 130, 70), new TextColor.RGB(170, 130, 70), new TextColor.RGB(170, 130, 70),
 				new TextColor.RGB(170, 130, 70), new TextColor.RGB(170, 130, 70));
 		setTheme(th);
-
+                
 		renderMap();
 
 		player = new Label("φ");
